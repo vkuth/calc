@@ -17,37 +17,31 @@ namespace calculator
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void calculeted(object sender, EventArgs e)
         {
-            double tb1 = Convert.ToDouble(textBox1.Text);
-            double tb2 = Convert.ToDouble(textBox2.Text);
-            double tb3 = tb1 + tb2;
-            textBox3.Text = tb3.ToString();
+            double firstvalue = Convert.ToDouble(textBox1.Text);
+            double secondvalue = Convert.ToDouble(textBox2.Text);
+            double result;
+            switch (((Button)sender).Name)
+            {
+                case "plus":
+                    result = firstvalue + secondvalue;
+                    break;
+                case "minus":
+                    result = firstvalue - secondvalue;
+                    break;
+                case "umnozit":
+                    result = firstvalue * secondvalue;
+                    break;
+                case "delit":
+                    result = firstvalue / secondvalue;
+                    break;
+                default: throw new Exception("Huston we have a problem");
+            }
+            textBox3.Text = result.ToString();
         }
 
-        private void button2_Click(object sender, EventArgs e)
-        {
-            double tb1 = Convert.ToDouble(textBox1.Text);
-            double tb2 = Convert.ToDouble(textBox2.Text);
-            double tb3 = tb1 - tb2;
-            textBox3.Text = tb3.ToString();
-        }
-
-        private void button3_Click(object sender, EventArgs e)
-        {
-            double tb1 = Convert.ToDouble(textBox1.Text);
-            double tb2 = Convert.ToDouble(textBox2.Text);
-            double tb3 = tb1 * tb2;
-            textBox3.Text = tb3.ToString();
-        }
-
-        private void button4_Click(object sender, EventArgs e)
-        {
-            double tb1 = Convert.ToDouble(textBox1.Text);
-            double tb2 = Convert.ToDouble(textBox2.Text);
-            double tb3 = tb1 / tb2;
-            textBox3.Text = tb3.ToString();
-        }
+       
 
        
     }

@@ -28,10 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.plus = new System.Windows.Forms.Button();
+            this.minus = new System.Windows.Forms.Button();
+            this.umnozit = new System.Windows.Forms.Button();
+            this.delit = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
@@ -40,45 +40,45 @@
             this.label3 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // button1
+            // plus
             // 
-            this.button1.Location = new System.Drawing.Point(90, 163);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(56, 54);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "+";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.plus.Location = new System.Drawing.Point(90, 163);
+            this.plus.Name = "plus";
+            this.plus.Size = new System.Drawing.Size(56, 54);
+            this.plus.TabIndex = 0;
+            this.plus.Text = "+";
+            this.plus.UseVisualStyleBackColor = true;
+            this.plus.Click += new System.EventHandler(this.calculeted);
             // 
-            // button2
+            // minus
             // 
-            this.button2.Location = new System.Drawing.Point(202, 163);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(56, 54);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "-";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.minus.Location = new System.Drawing.Point(202, 163);
+            this.minus.Name = "minus";
+            this.minus.Size = new System.Drawing.Size(56, 54);
+            this.minus.TabIndex = 1;
+            this.minus.Text = "-";
+            this.minus.UseVisualStyleBackColor = true;
+            this.minus.Click += new System.EventHandler(this.calculeted);
             // 
-            // button3
+            // umnozit
             // 
-            this.button3.Location = new System.Drawing.Point(90, 281);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(56, 54);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "*";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.umnozit.Location = new System.Drawing.Point(90, 281);
+            this.umnozit.Name = "umnozit";
+            this.umnozit.Size = new System.Drawing.Size(56, 54);
+            this.umnozit.TabIndex = 2;
+            this.umnozit.Text = "*";
+            this.umnozit.UseVisualStyleBackColor = true;
+            this.umnozit.Click += new System.EventHandler(this.calculeted);
             // 
-            // button4
+            // delit
             // 
-            this.button4.Location = new System.Drawing.Point(202, 281);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(56, 54);
-            this.button4.TabIndex = 3;
-            this.button4.Text = "/";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
+            this.delit.Location = new System.Drawing.Point(202, 281);
+            this.delit.Name = "delit";
+            this.delit.Size = new System.Drawing.Size(56, 54);
+            this.delit.TabIndex = 3;
+            this.delit.Text = "/";
+            this.delit.UseVisualStyleBackColor = true;
+            this.delit.Click += new System.EventHandler(this.calculeted);
             // 
             // textBox1
             // 
@@ -132,19 +132,21 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.ClientSize = new System.Drawing.Size(742, 463);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.delit);
+            this.Controls.Add(this.umnozit);
+            this.Controls.Add(this.minus);
+            this.Controls.Add(this.plus);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.TransparencyKey = System.Drawing.Color.Olive;
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -152,10 +154,10 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button plus;
+        private System.Windows.Forms.Button minus;
+        private System.Windows.Forms.Button umnozit;
+        private System.Windows.Forms.Button delit;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TextBox textBox3;
