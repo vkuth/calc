@@ -22,22 +22,8 @@ namespace calculator
             double firstvalue = Convert.ToDouble(textBox1.Text);
             double secondvalue = Convert.ToDouble(textBox2.Text);
             double result;
-            switch (((Button)sender).Name)
-            {
-                case "plus":
-                    result = firstvalue + secondvalue;
-                    break;
-                case "minus":
-                    result = firstvalue - secondvalue;
-                    break;
-                case "umnozit":
-                    result = firstvalue * secondvalue;
-                    break;
-                case "delit":
-                    result = firstvalue / secondvalue;
-                    break;
-                default: throw new Exception("Huston we have a problem");
-            }
+            ICalculator calculator = CalculatorFactory.CreateCalculator(((Button)sender).Name);
+            result = calculator.Calculate(firstvalue, secondvalue);
             textBox3.Text = result.ToString();
         }
 
