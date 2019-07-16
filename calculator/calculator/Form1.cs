@@ -19,11 +19,11 @@ namespace calculator
 
         private void calculeted(object sender, EventArgs e)
         {
-            double firstvalue = Convert.ToDouble(textBox1.Text);
-            double secondvalue = Convert.ToDouble(textBox2.Text);
+            double firstValue = Convert.ToDouble(textBox1.Text);
+            double secondValue = Convert.ToDouble(textBox2.Text);
             double result;
             ICalculator calculator = CalculatorFactory.CreateCalculator(((Button)sender).Name);
-            result = calculator.Calculate(firstvalue, secondvalue);
+            result = calculator.Calculate(firstValue, secondValue);
             textBox3.Text = result.ToString();
         }
 
