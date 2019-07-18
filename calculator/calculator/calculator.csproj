@@ -50,6 +50,7 @@
     <Compile Include="OneArgumentCalvulator\arccosxCalculator.cs" />
     <Compile Include="OneArgumentCalvulator\arcsinxCalculator.cs" />
     <Compile Include="OneArgumentCalvulator\arctanxCalculator.cs" />
+    <Compile Include="OneArgumentCalvulator\ctanxCalculator.cs" />
     <Compile Include="OneArgumentCalvulator\expcalculator.cs" />
     <Compile Include="OneArgumentCalvulator\lncalculator.cs" />
     <Compile Include="OneArgumentCalvulator\log10calculator.cs" />
