@@ -46,6 +46,7 @@
             this.logxy = new System.Windows.Forms.Button();
             this.frdegree = new System.Windows.Forms.Button();
             this.modul = new System.Windows.Forms.Button();
+            this.anti = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // plus
@@ -215,12 +216,23 @@
             this.modul.UseVisualStyleBackColor = true;
             this.modul.Click += new System.EventHandler(this.sincos);
             // 
+            // anti
+            // 
+            this.anti.Location = new System.Drawing.Point(671, 163);
+            this.anti.Name = "anti";
+            this.anti.Size = new System.Drawing.Size(60, 54);
+            this.anti.TabIndex = 18;
+            this.anti.Text = "-x";
+            this.anti.UseVisualStyleBackColor = true;
+            this.anti.Click += new System.EventHandler(this.sincos);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.ClientSize = new System.Drawing.Size(1209, 549);
+            this.Controls.Add(this.anti);
             this.Controls.Add(this.modul);
             this.Controls.Add(this.frdegree);
             this.Controls.Add(this.logxy);
@@ -267,6 +279,7 @@
         private System.Windows.Forms.Button logxy;
         private System.Windows.Forms.Button frdegree;
         private System.Windows.Forms.Button modul;
+        private System.Windows.Forms.Button anti;
     }
 }
 

@@ -18,6 +18,8 @@ namespace calculator.OneArgumentCalvulator
                     return new TANCalculator();
                 case "modul":
                     return new ModulCalculator();
+                case "anti":
+                    return new AntiCalculator();
                 default: throw new Exception("Huston we have a problem");
             }
         }
