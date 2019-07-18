@@ -48,6 +48,7 @@
   <ItemGroup>
     <Compile Include="OneArgumentCalvulator\AntiCalculator.cs" />
     <Compile Include="OneArgumentCalvulator\arccosxCalculator.cs" />
+    <Compile Include="OneArgumentCalvulator\arcsinxCalculator.cs" />
     <Compile Include="OneArgumentCalvulator\arctanxCalculator.cs" />
     <Compile Include="OneArgumentCalvulator\expcalculator.cs" />
     <Compile Include="OneArgumentCalvulator\lncalculator.cs" />

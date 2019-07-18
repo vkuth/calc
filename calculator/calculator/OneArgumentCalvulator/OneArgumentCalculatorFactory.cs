@@ -36,6 +36,8 @@ namespace calculator.OneArgumentCalvulator
                     return new arctanxCalculator();
                 case "arccosx":
                     return new arccosxCalculator();
+                case "arcsinx":
+                    return new arcsinxCalculator();
                 default: throw new Exception("Huston we have a problem");
             }
         }

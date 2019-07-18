@@ -56,7 +56,7 @@
             this.oneonx = new System.Windows.Forms.Button();
             this.arctanx = new System.Windows.Forms.Button();
             this.arccosx = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
+            this.arcsinx = new System.Windows.Forms.Button();
             this.button8 = new System.Windows.Forms.Button();
             this.button9 = new System.Windows.Forms.Button();
             this.button10 = new System.Windows.Forms.Button();
@@ -329,14 +329,15 @@
             this.arccosx.UseVisualStyleBackColor = true;
             this.arccosx.Click += new System.EventHandler(this.sincos);
             // 
-            // button7
+            // arcsinx
             // 
-            this.button7.Location = new System.Drawing.Point(671, 377);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(60, 54);
-            this.button7.TabIndex = 28;
-            this.button7.Text = "x+y/2";
-            this.button7.UseVisualStyleBackColor = true;
+            this.arcsinx.Location = new System.Drawing.Point(671, 377);
+            this.arcsinx.Name = "arcsinx";
+            this.arcsinx.Size = new System.Drawing.Size(60, 54);
+            this.arcsinx.TabIndex = 28;
+            this.arcsinx.Text = "arcsin(x)";
+            this.arcsinx.UseVisualStyleBackColor = true;
+            this.arcsinx.Click += new System.EventHandler(this.sincos);
             // 
             // button8
             // 
@@ -374,7 +375,7 @@
             this.Controls.Add(this.button10);
             this.Controls.Add(this.button9);
             this.Controls.Add(this.button8);
-            this.Controls.Add(this.button7);
+            this.Controls.Add(this.arcsinx);
             this.Controls.Add(this.arccosx);
             this.Controls.Add(this.arctanx);
             this.Controls.Add(this.oneonx);
@@ -441,7 +442,7 @@
         private System.Windows.Forms.Button oneonx;
         private System.Windows.Forms.Button arctanx;
         private System.Windows.Forms.Button arccosx;
-        private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.Button arcsinx;
         private System.Windows.Forms.Button button8;
         private System.Windows.Forms.Button button9;
         private System.Windows.Forms.Button button10;
