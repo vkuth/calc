@@ -24,6 +24,8 @@ namespace calculator.TwoArgumentCalculator
                     return new FractionalDegreeCalculator();
                 case "arif":
                     return new MiddleArifmetCalculator();
+                case "xony":
+                    return new xonyCalculator();
                 default: throw new Exception("Huston we have a problem");
             }
         }

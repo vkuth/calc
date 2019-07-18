@@ -58,7 +58,7 @@
             this.arccosx = new System.Windows.Forms.Button();
             this.arcsinx = new System.Windows.Forms.Button();
             this.ctanx = new System.Windows.Forms.Button();
-            this.button9 = new System.Windows.Forms.Button();
+            this.xony = new System.Windows.Forms.Button();
             this.button10 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -349,14 +349,15 @@
             this.ctanx.UseVisualStyleBackColor = true;
             this.ctanx.Click += new System.EventHandler(this.sincos);
             // 
-            // button9
+            // xony
             // 
-            this.button9.Location = new System.Drawing.Point(86, 470);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(60, 54);
-            this.button9.TabIndex = 30;
-            this.button9.Text = "x+y/2";
-            this.button9.UseVisualStyleBackColor = true;
+            this.xony.Location = new System.Drawing.Point(86, 470);
+            this.xony.Name = "xony";
+            this.xony.Size = new System.Drawing.Size(60, 54);
+            this.xony.TabIndex = 30;
+            this.xony.Text = "x^y";
+            this.xony.UseVisualStyleBackColor = true;
+            this.xony.Click += new System.EventHandler(this.calculeted);
             // 
             // button10
             // 
@@ -374,7 +375,7 @@
             this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.ClientSize = new System.Drawing.Size(1209, 549);
             this.Controls.Add(this.button10);
-            this.Controls.Add(this.button9);
+            this.Controls.Add(this.xony);
             this.Controls.Add(this.ctanx);
             this.Controls.Add(this.arcsinx);
             this.Controls.Add(this.arccosx);
@@ -445,7 +446,7 @@
         private System.Windows.Forms.Button arccosx;
         private System.Windows.Forms.Button arcsinx;
         private System.Windows.Forms.Button ctanx;
-        private System.Windows.Forms.Button button9;
+        private System.Windows.Forms.Button xony;
         private System.Windows.Forms.Button button10;
     }
 }
