@@ -24,6 +24,8 @@ namespace calculator.OneArgumentCalvulator
                     return new TwoDegreeXCalcularor();
                 case "tenx":
                     return new TenDegreeXCalculator();
+                case "exp":
+                    return new expcalculator();
                 default: throw new Exception("Huston we have a problem");
             }
         }
