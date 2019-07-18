@@ -16,6 +16,8 @@ namespace calculator.OneArgumentCalvulator
                     return new log2Calculator();
                 case "tan":
                     return new TANCalculator();
+                case "modul":
+                    return new ModulCalculator();
                 default: throw new Exception("Huston we have a problem");
             }
         }

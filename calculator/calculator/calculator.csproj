@@ -47,6 +47,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="OneArgumentCalvulator\log2Calculator.cs" />
+    <Compile Include="OneArgumentCalvulator\ModulCalculator.cs" />
     <Compile Include="OneArgumentCalvulator\TANCalculator.cs" />
     <Compile Include="TwoArgumentCalculator\CalculatorFactory.cs" />
     <Compile Include="OneArgumentCalvulator\COSCalculator.cs" />
