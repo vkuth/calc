@@ -12,6 +12,8 @@ namespace calculator.OneArgumentCalvulator
                     return new SINCalculator();
                 case "cos":
                     return new COSCalculator();
+                case "log2":
+                    return new log2Calculator();
                 default: throw new Exception("Huston we have a problem");
             }
         }

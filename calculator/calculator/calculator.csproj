@@ -46,6 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="OneArgumentCalvulator\log2Calculator.cs" />
     <Compile Include="TwoArgumentCalculator\CalculatorFactory.cs" />
     <Compile Include="OneArgumentCalvulator\COSCalculator.cs" />
     <Compile Include="TwoArgumentCalculator\delitcalculator.cs" />
@@ -59,6 +60,7 @@
     <Compile Include="OneArgumentCalvulator\IOneArgumentCalculator.cs" />
     <Compile Include="TwoArgumentCalculator\minuscalculator.cs" />
     <Compile Include="OneArgumentCalvulator\OneArgumentCalculatorFactory.cs" />
+    <Compile Include="TwoArgumentCalculator\ModCalculator.cs" />
     <Compile Include="TwoArgumentCalculator\pluscalculator.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

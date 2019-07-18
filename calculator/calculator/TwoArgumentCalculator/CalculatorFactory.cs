@@ -16,6 +16,8 @@ namespace calculator.TwoArgumentCalculator
                     return new multiplicalculator();
                 case "divizion":
                     return new divizioncalculator();
+                case "mod":
+                    return new ModCalculator();
                 default: throw new Exception("Huston we have a problem");
             }
         }

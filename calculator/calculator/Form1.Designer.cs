@@ -40,6 +40,8 @@
             this.label3 = new System.Windows.Forms.Label();
             this.sin = new System.Windows.Forms.Button();
             this.cos = new System.Windows.Forms.Button();
+            this.log2 = new System.Windows.Forms.Button();
+            this.mod = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // plus
@@ -150,12 +152,34 @@
             this.cos.UseVisualStyleBackColor = true;
             this.cos.Click += new System.EventHandler(this.sincos);
             // 
+            // log2
+            // 
+            this.log2.Location = new System.Drawing.Point(399, 163);
+            this.log2.Name = "log2";
+            this.log2.Size = new System.Drawing.Size(56, 54);
+            this.log2.TabIndex = 12;
+            this.log2.Text = "log2";
+            this.log2.UseVisualStyleBackColor = true;
+            this.log2.Click += new System.EventHandler(this.sincos);
+            // 
+            // mod
+            // 
+            this.mod.Location = new System.Drawing.Point(399, 281);
+            this.mod.Name = "mod";
+            this.mod.Size = new System.Drawing.Size(56, 54);
+            this.mod.TabIndex = 13;
+            this.mod.Text = "residue";
+            this.mod.UseVisualStyleBackColor = true;
+            this.mod.Click += new System.EventHandler(this.calculeted);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.ClientSize = new System.Drawing.Size(742, 463);
+            this.ClientSize = new System.Drawing.Size(1209, 549);
+            this.Controls.Add(this.mod);
+            this.Controls.Add(this.log2);
             this.Controls.Add(this.cos);
             this.Controls.Add(this.sin);
             this.Controls.Add(this.label3);
@@ -190,6 +214,8 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button sin;
         private System.Windows.Forms.Button cos;
+        private System.Windows.Forms.Button log2;
+        private System.Windows.Forms.Button mod;
     }
 }
 
