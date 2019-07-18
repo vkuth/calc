@@ -2,7 +2,7 @@
 
 namespace calculator.OneArgumentCalvulator
 {
-    class SINCalculator: IOneArgumentCalculator
+    public class SINCalculator: IOneArgumentCalculator
     {
         public double Calculate(double firstValue)
         {

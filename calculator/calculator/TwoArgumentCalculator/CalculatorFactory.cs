@@ -9,7 +9,7 @@ namespace calculator.TwoArgumentCalculator
             switch (operation)
             {
                 case "plus":
-                    return new pluscalculator();
+                    return new PlusCalculator();
                 case "minus":
                     return new MinusCalculator();
                 case "multipli":

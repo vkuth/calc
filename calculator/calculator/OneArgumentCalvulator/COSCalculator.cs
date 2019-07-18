@@ -2,7 +2,7 @@
 
 namespace calculator.OneArgumentCalvulator
 {
-    class COSCalculator:IOneArgumentCalculator
+    public class COSCalculator:IOneArgumentCalculator
     {
         public double Calculate(double firstValue)
         {

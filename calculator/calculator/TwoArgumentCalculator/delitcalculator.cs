@@ -1,6 +1,6 @@
 ﻿namespace calculator.TwoArgumentCalculator
 {
-    class divizioncalculator : ICalculator
+     public class divizioncalculator : ICalculator
     {
         public double Calculate(double firstvalue, double secondvalue)
         {
