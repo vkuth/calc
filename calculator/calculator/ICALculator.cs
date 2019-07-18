@@ -8,6 +8,6 @@ namespace calculator
 {
     public interface ICalculator
     {
-        double Calculate(double firstvalue, double secondvalue);
+        double Calculate(double firstValue, double secondValue);
     }
 }

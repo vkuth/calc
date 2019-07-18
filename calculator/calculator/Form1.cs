@@ -21,9 +21,8 @@ namespace calculator
         {
             double firstValue = Convert.ToDouble(textBox1.Text);
             double secondValue = Convert.ToDouble(textBox2.Text);
-            double result;
             ICalculator calculator = CalculatorFactory.CreateCalculator(((Button)sender).Name);
-            result = calculator.Calculate(firstValue, secondValue);
+            var result = calculator.Calculate(firstValue, secondValue);
             textBox3.Text = result.ToString();
         }
 

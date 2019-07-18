@@ -30,8 +30,8 @@
         {
             this.plus = new System.Windows.Forms.Button();
             this.minus = new System.Windows.Forms.Button();
-            this.umnozit = new System.Windows.Forms.Button();
-            this.delit = new System.Windows.Forms.Button();
+            this.multipli = new System.Windows.Forms.Button();
+            this.division = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
@@ -60,25 +60,25 @@
             this.minus.UseVisualStyleBackColor = true;
             this.minus.Click += new System.EventHandler(this.calculeted);
             // 
-            // umnozit
+            // multipli
             // 
-            this.umnozit.Location = new System.Drawing.Point(90, 281);
-            this.umnozit.Name = "umnozit";
-            this.umnozit.Size = new System.Drawing.Size(56, 54);
-            this.umnozit.TabIndex = 2;
-            this.umnozit.Text = "*";
-            this.umnozit.UseVisualStyleBackColor = true;
-            this.umnozit.Click += new System.EventHandler(this.calculeted);
+            this.multipli.Location = new System.Drawing.Point(90, 281);
+            this.multipli.Name = "multipli";
+            this.multipli.Size = new System.Drawing.Size(56, 54);
+            this.multipli.TabIndex = 2;
+            this.multipli.Text = "*";
+            this.multipli.UseVisualStyleBackColor = true;
+            this.multipli.Click += new System.EventHandler(this.calculeted);
             // 
-            // delit
+            // division
             // 
-            this.delit.Location = new System.Drawing.Point(202, 281);
-            this.delit.Name = "delit";
-            this.delit.Size = new System.Drawing.Size(56, 54);
-            this.delit.TabIndex = 3;
-            this.delit.Text = "/";
-            this.delit.UseVisualStyleBackColor = true;
-            this.delit.Click += new System.EventHandler(this.calculeted);
+            this.division.Location = new System.Drawing.Point(202, 281);
+            this.division.Name = "division";
+            this.division.Size = new System.Drawing.Size(56, 54);
+            this.division.TabIndex = 3;
+            this.division.Text = "/";
+            this.division.UseVisualStyleBackColor = true;
+            this.division.Click += new System.EventHandler(this.calculeted);
             // 
             // textBox1
             // 
@@ -140,8 +140,8 @@
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.delit);
-            this.Controls.Add(this.umnozit);
+            this.Controls.Add(this.division);
+            this.Controls.Add(this.multipli);
             this.Controls.Add(this.minus);
             this.Controls.Add(this.plus);
             this.Name = "Form1";
@@ -156,8 +156,8 @@
 
         private System.Windows.Forms.Button plus;
         private System.Windows.Forms.Button minus;
-        private System.Windows.Forms.Button umnozit;
-        private System.Windows.Forms.Button delit;
+        private System.Windows.Forms.Button multipli;
+        private System.Windows.Forms.Button division;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TextBox textBox3;

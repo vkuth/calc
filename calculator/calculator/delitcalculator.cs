@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace calculator
 {
-    class delitcalculator : ICalculator
+    class divizioncalculator : ICalculator
     {
         public double Calculate(double firstvalue, double secondvalue)
         {

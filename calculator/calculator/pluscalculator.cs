@@ -8,9 +8,9 @@ namespace calculator
 {
     class pluscalculator:ICalculator
     {
-        public double Calculate(double firstvalue, double secondvalue)
+        public double Calculate(double firstValue, double secondValue)
         {
-            return firstvalue + secondvalue;
+            return firstValue + secondValue;
         }
     }
 }
