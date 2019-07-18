@@ -16,9 +16,9 @@ namespace calculator
                     return new pluscalculator();
                 case "minus":
                     return new MinusCalculator();
-                case "divizion":
-                    return new multiplicalculator();
                 case "multipli":
+                    return new multiplicalculator();
+                case "divizion":
                     return new divizioncalculator();
                 default: throw new Exception("Huston we have a problem");
             }

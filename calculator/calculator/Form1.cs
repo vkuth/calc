@@ -26,8 +26,15 @@ namespace calculator
             textBox3.Text = result.ToString();
         }
 
-       
+        private void sincos(object sender, EventArgs e)
+        {
+            double firstValue = Convert.ToDouble(textBox1.Text);
+            IOneArgumentCalculator calculator = OneArgumentCalculatorFactory.CreateCalculator(((Button)sender).Name);
+            var result = calculator.Calculate(firstValue);
+            textBox3.Text = result.ToString();
+        }
 
-       
+
+
     }
 }

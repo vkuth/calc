@@ -31,13 +31,15 @@
             this.plus = new System.Windows.Forms.Button();
             this.minus = new System.Windows.Forms.Button();
             this.multipli = new System.Windows.Forms.Button();
-            this.division = new System.Windows.Forms.Button();
+            this.divizion = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.sin = new System.Windows.Forms.Button();
+            this.cos = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // plus
@@ -70,15 +72,15 @@
             this.multipli.UseVisualStyleBackColor = true;
             this.multipli.Click += new System.EventHandler(this.calculeted);
             // 
-            // division
+            // divizion
             // 
-            this.division.Location = new System.Drawing.Point(202, 281);
-            this.division.Name = "division";
-            this.division.Size = new System.Drawing.Size(56, 54);
-            this.division.TabIndex = 3;
-            this.division.Text = "/";
-            this.division.UseVisualStyleBackColor = true;
-            this.division.Click += new System.EventHandler(this.calculeted);
+            this.divizion.Location = new System.Drawing.Point(202, 281);
+            this.divizion.Name = "divizion";
+            this.divizion.Size = new System.Drawing.Size(56, 54);
+            this.divizion.TabIndex = 3;
+            this.divizion.Text = "/";
+            this.divizion.UseVisualStyleBackColor = true;
+            this.divizion.Click += new System.EventHandler(this.calculeted);
             // 
             // textBox1
             // 
@@ -128,19 +130,41 @@
             this.label3.TabIndex = 9;
             this.label3.Text = "результат";
             // 
+            // sin
+            // 
+            this.sin.Location = new System.Drawing.Point(311, 163);
+            this.sin.Name = "sin";
+            this.sin.Size = new System.Drawing.Size(56, 54);
+            this.sin.TabIndex = 10;
+            this.sin.Text = "sin";
+            this.sin.UseVisualStyleBackColor = true;
+            this.sin.Click += new System.EventHandler(this.sincos);
+            // 
+            // cos
+            // 
+            this.cos.Location = new System.Drawing.Point(311, 281);
+            this.cos.Name = "cos";
+            this.cos.Size = new System.Drawing.Size(56, 54);
+            this.cos.TabIndex = 11;
+            this.cos.Text = "cos";
+            this.cos.UseVisualStyleBackColor = true;
+            this.cos.Click += new System.EventHandler(this.sincos);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.ClientSize = new System.Drawing.Size(742, 463);
+            this.Controls.Add(this.cos);
+            this.Controls.Add(this.sin);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.division);
+            this.Controls.Add(this.divizion);
             this.Controls.Add(this.multipli);
             this.Controls.Add(this.minus);
             this.Controls.Add(this.plus);
@@ -157,13 +181,15 @@
         private System.Windows.Forms.Button plus;
         private System.Windows.Forms.Button minus;
         private System.Windows.Forms.Button multipli;
-        private System.Windows.Forms.Button division;
+        private System.Windows.Forms.Button divizion;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button sin;
+        private System.Windows.Forms.Button cos;
     }
 }
 
