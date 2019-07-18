@@ -44,6 +44,7 @@
             this.mod = new System.Windows.Forms.Button();
             this.tan = new System.Windows.Forms.Button();
             this.logxy = new System.Windows.Forms.Button();
+            this.frdegree = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // plus
@@ -193,12 +194,23 @@
             this.logxy.UseVisualStyleBackColor = true;
             this.logxy.Click += new System.EventHandler(this.calculeted);
             // 
+            // frdegree
+            // 
+            this.frdegree.Location = new System.Drawing.Point(588, 163);
+            this.frdegree.Name = "frdegree";
+            this.frdegree.Size = new System.Drawing.Size(60, 54);
+            this.frdegree.TabIndex = 16;
+            this.frdegree.Text = "x^(1/y)";
+            this.frdegree.UseVisualStyleBackColor = true;
+            this.frdegree.Click += new System.EventHandler(this.calculeted);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.ClientSize = new System.Drawing.Size(1209, 549);
+            this.Controls.Add(this.frdegree);
             this.Controls.Add(this.logxy);
             this.Controls.Add(this.tan);
             this.Controls.Add(this.mod);
@@ -241,6 +253,7 @@
         private System.Windows.Forms.Button mod;
         private System.Windows.Forms.Button tan;
         private System.Windows.Forms.Button logxy;
+        private System.Windows.Forms.Button frdegree;
     }
 }
 

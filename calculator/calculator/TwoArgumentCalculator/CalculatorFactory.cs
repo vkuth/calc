@@ -20,6 +20,8 @@ namespace calculator.TwoArgumentCalculator
                     return new ModCalculator();
                 case "logxy":
                     return new logxyCalculator();
+                case "frdegree":
+                    return new FractionalDegreeCalculator();
                 default: throw new Exception("Huston we have a problem");
             }
         }
