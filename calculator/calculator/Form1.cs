@@ -36,7 +36,5 @@ namespace calculator
             textBox3.Text = result.ToString();
         }
 
-
-
     }
 }

@@ -42,6 +42,7 @@
             this.cos = new System.Windows.Forms.Button();
             this.log2 = new System.Windows.Forms.Button();
             this.mod = new System.Windows.Forms.Button();
+            this.tan = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // plus
@@ -160,7 +161,6 @@
             this.log2.TabIndex = 12;
             this.log2.Text = "log2";
             this.log2.UseVisualStyleBackColor = true;
-            this.log2.Click += new System.EventHandler(this.sincos);
             // 
             // mod
             // 
@@ -172,12 +172,23 @@
             this.mod.UseVisualStyleBackColor = true;
             this.mod.Click += new System.EventHandler(this.calculeted);
             // 
+            // tan
+            // 
+            this.tan.Location = new System.Drawing.Point(505, 163);
+            this.tan.Name = "tan";
+            this.tan.Size = new System.Drawing.Size(56, 54);
+            this.tan.TabIndex = 14;
+            this.tan.Text = "tan";
+            this.tan.UseVisualStyleBackColor = true;
+            this.tan.Click += new System.EventHandler(this.sincos);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.ClientSize = new System.Drawing.Size(1209, 549);
+            this.Controls.Add(this.tan);
             this.Controls.Add(this.mod);
             this.Controls.Add(this.log2);
             this.Controls.Add(this.cos);
@@ -216,6 +227,7 @@
         private System.Windows.Forms.Button cos;
         private System.Windows.Forms.Button log2;
         private System.Windows.Forms.Button mod;
+        private System.Windows.Forms.Button tan;
     }
 }
 
