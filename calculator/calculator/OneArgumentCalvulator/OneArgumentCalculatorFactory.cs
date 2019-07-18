@@ -32,6 +32,8 @@ namespace calculator.OneArgumentCalvulator
                     return new log10calculator();
                 case "oneonx":
                     return new oneonxCalculator();
+                case "arctanx":
+                    return new arctanxCalculator();
                 default: throw new Exception("Huston we have a problem");
             }
         }

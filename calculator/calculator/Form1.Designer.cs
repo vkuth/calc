@@ -54,7 +54,7 @@
             this.ln = new System.Windows.Forms.Button();
             this.log10 = new System.Windows.Forms.Button();
             this.oneonx = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
+            this.arctanx = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
             this.button8 = new System.Windows.Forms.Button();
@@ -309,14 +309,15 @@
             this.oneonx.UseVisualStyleBackColor = true;
             this.oneonx.Click += new System.EventHandler(this.sincos);
             // 
-            // button5
+            // arctanx
             // 
-            this.button5.Location = new System.Drawing.Point(517, 377);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(60, 54);
-            this.button5.TabIndex = 26;
-            this.button5.Text = "x+y/2";
-            this.button5.UseVisualStyleBackColor = true;
+            this.arctanx.Location = new System.Drawing.Point(517, 377);
+            this.arctanx.Name = "arctanx";
+            this.arctanx.Size = new System.Drawing.Size(60, 54);
+            this.arctanx.TabIndex = 26;
+            this.arctanx.Text = "arctan(x)";
+            this.arctanx.UseVisualStyleBackColor = true;
+            this.arctanx.Click += new System.EventHandler(this.sincos);
             // 
             // button6
             // 
@@ -374,7 +375,7 @@
             this.Controls.Add(this.button8);
             this.Controls.Add(this.button7);
             this.Controls.Add(this.button6);
-            this.Controls.Add(this.button5);
+            this.Controls.Add(this.arctanx);
             this.Controls.Add(this.oneonx);
             this.Controls.Add(this.log10);
             this.Controls.Add(this.ln);
@@ -437,7 +438,7 @@
         private System.Windows.Forms.Button ln;
         private System.Windows.Forms.Button log10;
         private System.Windows.Forms.Button oneonx;
-        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button arctanx;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Button button8;
