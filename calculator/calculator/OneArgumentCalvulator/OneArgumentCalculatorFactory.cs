@@ -28,6 +28,8 @@ namespace calculator.OneArgumentCalvulator
                     return new expcalculator();
                 case "ln":
                     return new lncalculator();
+                case "log10":
+                    return new log10calculator();
                 default: throw new Exception("Huston we have a problem");
             }
         }

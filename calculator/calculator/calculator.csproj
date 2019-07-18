@@ -49,6 +49,7 @@
     <Compile Include="OneArgumentCalvulator\AntiCalculator.cs" />
     <Compile Include="OneArgumentCalvulator\expcalculator.cs" />
     <Compile Include="OneArgumentCalvulator\lncalculator.cs" />
+    <Compile Include="OneArgumentCalvulator\log10calculator.cs" />
     <Compile Include="OneArgumentCalvulator\log2Calculator.cs" />
     <Compile Include="OneArgumentCalvulator\ModulCalculator.cs" />
     <Compile Include="OneArgumentCalvulator\TANCalculator.cs" />

@@ -52,7 +52,7 @@
             this.arif = new System.Windows.Forms.Button();
             this.exp = new System.Windows.Forms.Button();
             this.ln = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.log10 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
@@ -289,14 +289,15 @@
             this.ln.UseVisualStyleBackColor = true;
             this.ln.Click += new System.EventHandler(this.sincos);
             // 
-            // button3
+            // log10
             // 
-            this.button3.Location = new System.Drawing.Point(307, 377);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(60, 54);
-            this.button3.TabIndex = 24;
-            this.button3.Text = "x+y/2";
-            this.button3.UseVisualStyleBackColor = true;
+            this.log10.Location = new System.Drawing.Point(307, 377);
+            this.log10.Name = "log10";
+            this.log10.Size = new System.Drawing.Size(60, 54);
+            this.log10.TabIndex = 24;
+            this.log10.Text = "log10(x)";
+            this.log10.UseVisualStyleBackColor = true;
+            this.log10.Click += new System.EventHandler(this.sincos);
             // 
             // button4
             // 
@@ -374,7 +375,7 @@
             this.Controls.Add(this.button6);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
+            this.Controls.Add(this.log10);
             this.Controls.Add(this.ln);
             this.Controls.Add(this.exp);
             this.Controls.Add(this.arif);
@@ -433,7 +434,7 @@
         private System.Windows.Forms.Button arif;
         private System.Windows.Forms.Button exp;
         private System.Windows.Forms.Button ln;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button log10;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button6;
