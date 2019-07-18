@@ -73,6 +73,7 @@
     <Compile Include="TwoArgumentCalculator\ICalculator.cs" />
     <Compile Include="OneArgumentCalvulator\IOneArgumentCalculator.cs" />
     <Compile Include="TwoArgumentCalculator\logxyCalculator.cs" />
+    <Compile Include="TwoArgumentCalculator\maxCalculator.cs" />
     <Compile Include="TwoArgumentCalculator\MiddleArifmetCalculator.cs" />
     <Compile Include="TwoArgumentCalculator\minuscalculator.cs" />
     <Compile Include="OneArgumentCalvulator\OneArgumentCalculatorFactory.cs" />

@@ -59,7 +59,7 @@
             this.arcsinx = new System.Windows.Forms.Button();
             this.ctanx = new System.Windows.Forms.Button();
             this.xony = new System.Windows.Forms.Button();
-            this.button10 = new System.Windows.Forms.Button();
+            this.max = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // plus
@@ -359,14 +359,15 @@
             this.xony.UseVisualStyleBackColor = true;
             this.xony.Click += new System.EventHandler(this.calculeted);
             // 
-            // button10
+            // max
             // 
-            this.button10.Location = new System.Drawing.Point(198, 470);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(60, 54);
-            this.button10.TabIndex = 31;
-            this.button10.Text = "x+y/2";
-            this.button10.UseVisualStyleBackColor = true;
+            this.max.Location = new System.Drawing.Point(198, 470);
+            this.max.Name = "max";
+            this.max.Size = new System.Drawing.Size(60, 54);
+            this.max.TabIndex = 31;
+            this.max.Text = "max";
+            this.max.UseVisualStyleBackColor = true;
+            this.max.Click += new System.EventHandler(this.calculeted);
             // 
             // Form1
             // 
@@ -374,7 +375,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.ClientSize = new System.Drawing.Size(1209, 549);
-            this.Controls.Add(this.button10);
+            this.Controls.Add(this.max);
             this.Controls.Add(this.xony);
             this.Controls.Add(this.ctanx);
             this.Controls.Add(this.arcsinx);
@@ -447,7 +448,7 @@
         private System.Windows.Forms.Button arcsinx;
         private System.Windows.Forms.Button ctanx;
         private System.Windows.Forms.Button xony;
-        private System.Windows.Forms.Button button10;
+        private System.Windows.Forms.Button max;
     }
 }
 

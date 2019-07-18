@@ -26,6 +26,8 @@ namespace calculator.TwoArgumentCalculator
                     return new MiddleArifmetCalculator();
                 case "xony":
                     return new xonyCalculator();
+                case "max":
+                    return new maxCalculator();
                 default: throw new Exception("Huston we have a problem");
             }
         }
