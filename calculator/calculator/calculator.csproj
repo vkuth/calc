@@ -50,6 +50,8 @@
     <Compile Include="OneArgumentCalvulator\log2Calculator.cs" />
     <Compile Include="OneArgumentCalvulator\ModulCalculator.cs" />
     <Compile Include="OneArgumentCalvulator\TANCalculator.cs" />
+    <Compile Include="OneArgumentCalvulator\TenDegreeXCalculator.cs" />
+    <Compile Include="OneArgumentCalvulator\TwoDegreeXCalcularor.cs" />
     <Compile Include="TwoArgumentCalculator\CalculatorFactory.cs" />
     <Compile Include="OneArgumentCalvulator\COSCalculator.cs" />
     <Compile Include="TwoArgumentCalculator\delitcalculator.cs" />
@@ -63,6 +65,7 @@
     <Compile Include="TwoArgumentCalculator\ICalculator.cs" />
     <Compile Include="OneArgumentCalvulator\IOneArgumentCalculator.cs" />
     <Compile Include="TwoArgumentCalculator\logxyCalculator.cs" />
+    <Compile Include="TwoArgumentCalculator\MiddleArifmetCalculator.cs" />
     <Compile Include="TwoArgumentCalculator\minuscalculator.cs" />
     <Compile Include="OneArgumentCalvulator\OneArgumentCalculatorFactory.cs" />
     <Compile Include="TwoArgumentCalculator\ModCalculator.cs" />

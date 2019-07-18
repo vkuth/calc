@@ -20,6 +20,10 @@ namespace calculator.OneArgumentCalvulator
                     return new ModulCalculator();
                 case "anti":
                     return new AntiCalculator();
+                case "twox":
+                    return new TwoDegreeXCalcularor();
+                case "tenx":
+                    return new TenDegreeXCalculator();
                 default: throw new Exception("Huston we have a problem");
             }
         }

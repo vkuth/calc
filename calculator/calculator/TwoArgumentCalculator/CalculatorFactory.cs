@@ -22,6 +22,8 @@ namespace calculator.TwoArgumentCalculator
                     return new logxyCalculator();
                 case "frdegree":
                     return new FractionalDegreeCalculator();
+                case "arif":
+                    return new MiddleArifmetCalculator();
                 default: throw new Exception("Huston we have a problem");
             }
         }
