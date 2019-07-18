@@ -51,7 +51,7 @@
             this.tenx = new System.Windows.Forms.Button();
             this.arif = new System.Windows.Forms.Button();
             this.exp = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.ln = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
@@ -279,14 +279,15 @@
             this.exp.UseVisualStyleBackColor = true;
             this.exp.Click += new System.EventHandler(this.sincos);
             // 
-            // button2
+            // ln
             // 
-            this.button2.Location = new System.Drawing.Point(198, 377);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(60, 54);
-            this.button2.TabIndex = 23;
-            this.button2.Text = "x+y/2";
-            this.button2.UseVisualStyleBackColor = true;
+            this.ln.Location = new System.Drawing.Point(198, 377);
+            this.ln.Name = "ln";
+            this.ln.Size = new System.Drawing.Size(60, 54);
+            this.ln.TabIndex = 23;
+            this.ln.Text = "ln(x)";
+            this.ln.UseVisualStyleBackColor = true;
+            this.ln.Click += new System.EventHandler(this.sincos);
             // 
             // button3
             // 
@@ -374,7 +375,7 @@
             this.Controls.Add(this.button5);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.ln);
             this.Controls.Add(this.exp);
             this.Controls.Add(this.arif);
             this.Controls.Add(this.tenx);
@@ -431,7 +432,7 @@
         private System.Windows.Forms.Button tenx;
         private System.Windows.Forms.Button arif;
         private System.Windows.Forms.Button exp;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button ln;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button5;
