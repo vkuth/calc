@@ -43,6 +43,7 @@
             this.log2 = new System.Windows.Forms.Button();
             this.mod = new System.Windows.Forms.Button();
             this.tan = new System.Windows.Forms.Button();
+            this.logxy = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // plus
@@ -182,12 +183,23 @@
             this.tan.UseVisualStyleBackColor = true;
             this.tan.Click += new System.EventHandler(this.sincos);
             // 
+            // logxy
+            // 
+            this.logxy.Location = new System.Drawing.Point(505, 281);
+            this.logxy.Name = "logxy";
+            this.logxy.Size = new System.Drawing.Size(72, 54);
+            this.logxy.TabIndex = 15;
+            this.logxy.Text = "logx(y)";
+            this.logxy.UseVisualStyleBackColor = true;
+            this.logxy.Click += new System.EventHandler(this.calculeted);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.ClientSize = new System.Drawing.Size(1209, 549);
+            this.Controls.Add(this.logxy);
             this.Controls.Add(this.tan);
             this.Controls.Add(this.mod);
             this.Controls.Add(this.log2);
@@ -228,6 +240,7 @@
         private System.Windows.Forms.Button log2;
         private System.Windows.Forms.Button mod;
         private System.Windows.Forms.Button tan;
+        private System.Windows.Forms.Button logxy;
     }
 }
 

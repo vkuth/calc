@@ -18,6 +18,8 @@ namespace calculator.TwoArgumentCalculator
                     return new divizioncalculator();
                 case "mod":
                     return new ModCalculator();
+                case "logxy":
+                    return new logxyCalculator();
                 default: throw new Exception("Huston we have a problem");
             }
         }
