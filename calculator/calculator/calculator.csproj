@@ -52,6 +52,7 @@
     <Compile Include="OneArgumentCalvulator\log10calculator.cs" />
     <Compile Include="OneArgumentCalvulator\log2Calculator.cs" />
     <Compile Include="OneArgumentCalvulator\ModulCalculator.cs" />
+    <Compile Include="OneArgumentCalvulator\oneonxCalculator.cs" />
     <Compile Include="OneArgumentCalvulator\TANCalculator.cs" />
     <Compile Include="OneArgumentCalvulator\TenDegreeXCalculator.cs" />
     <Compile Include="OneArgumentCalvulator\TwoDegreeXCalcularor.cs" />

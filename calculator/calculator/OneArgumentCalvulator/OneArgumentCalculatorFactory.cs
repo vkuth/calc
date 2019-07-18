@@ -30,6 +30,8 @@ namespace calculator.OneArgumentCalvulator
                     return new lncalculator();
                 case "log10":
                     return new log10calculator();
+                case "oneonx":
+                    return new oneonxCalculator();
                 default: throw new Exception("Huston we have a problem");
             }
         }

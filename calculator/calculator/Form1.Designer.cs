@@ -53,7 +53,7 @@
             this.exp = new System.Windows.Forms.Button();
             this.ln = new System.Windows.Forms.Button();
             this.log10 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.oneonx = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
@@ -299,14 +299,15 @@
             this.log10.UseVisualStyleBackColor = true;
             this.log10.Click += new System.EventHandler(this.sincos);
             // 
-            // button4
+            // oneonx
             // 
-            this.button4.Location = new System.Drawing.Point(399, 377);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(60, 54);
-            this.button4.TabIndex = 25;
-            this.button4.Text = "x+y/2";
-            this.button4.UseVisualStyleBackColor = true;
+            this.oneonx.Location = new System.Drawing.Point(399, 377);
+            this.oneonx.Name = "oneonx";
+            this.oneonx.Size = new System.Drawing.Size(60, 54);
+            this.oneonx.TabIndex = 25;
+            this.oneonx.Text = "1/x";
+            this.oneonx.UseVisualStyleBackColor = true;
+            this.oneonx.Click += new System.EventHandler(this.sincos);
             // 
             // button5
             // 
@@ -374,7 +375,7 @@
             this.Controls.Add(this.button7);
             this.Controls.Add(this.button6);
             this.Controls.Add(this.button5);
-            this.Controls.Add(this.button4);
+            this.Controls.Add(this.oneonx);
             this.Controls.Add(this.log10);
             this.Controls.Add(this.ln);
             this.Controls.Add(this.exp);
@@ -435,7 +436,7 @@
         private System.Windows.Forms.Button exp;
         private System.Windows.Forms.Button ln;
         private System.Windows.Forms.Button log10;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button oneonx;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Button button7;
