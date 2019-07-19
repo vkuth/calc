@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace calculator.TwoArgumentCalculator
 {
-    class xonyCalculator : ICalculator
+    public class xonyCalculator : ICalculator
     {
         public double Calculate(double firstvalue, double secondvalue)
         {
