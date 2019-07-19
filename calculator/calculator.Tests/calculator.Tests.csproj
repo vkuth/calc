@@ -53,6 +53,7 @@
     <Compile Include="OneArgumentCalvulator\arcsinxCalculatorTest.cs" />
     <Compile Include="OneArgumentCalvulator\arctanxCalculatorTest.cs" />
     <Compile Include="OneArgumentCalvulator\COSCalculatorTest.cs" />
+    <Compile Include="OneArgumentCalvulator\ctanxCalculatorTest.cs" />
     <Compile Include="OneArgumentCalvulator\expCalculatorTest.cs" />
     <Compile Include="OneArgumentCalvulator\lnCalculatorTest.cs" />
     <Compile Include="OneArgumentCalvulator\log10CalculatorTest.cs" />

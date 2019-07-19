@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace calculator.OneArgumentCalvulator
 {
-    class ctanxCalculator : IOneArgumentCalculator
+    public class ctanxCalculator : IOneArgumentCalculator
     {
         public double Calculate(double firstValue)
         {
