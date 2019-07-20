@@ -40,8 +40,7 @@ namespace calculator
             try
             {
                 double firstValue = Convert.ToDouble(textBox1.Text);
-                IOneArgumentCalculator calculator =
-                    OneArgumentCalculatorFactory.CreateCalculator(((Button) sender).Name);
+                IOneArgumentCalculator calculator =OneArgumentCalculatorFactory.CreateCalculator(((Button) sender).Name);
                 var result = calculator.Calculate(firstValue);
                 textBox3.Text = result.ToString();
             }
