@@ -10,6 +10,10 @@ namespace calculator.OneArgumentCalvulator
     {
         public double Calculate(double firstValue)
         {
+            if (firstValue < -1 || firstValue>1)
+            {
+                throw new Exception("Вне диапазона");
+            }
             return Math.Acos(firstValue);
         }
     }
