@@ -50,6 +50,7 @@
   <ItemGroup>
     <Compile Include="CalculatorFactoryTest\CalculatorFactoryTest.cs" />
     <Compile Include="Class1.cs" />
+    <Compile Include="OneArgumentCalculatorFactoryTest\OneArgumentCalculatorFactoryTest.cs" />
     <Compile Include="OneArgumentCalvulator\acrccosxCalculatorTest.cs" />
     <Compile Include="OneArgumentCalvulator\AntiCalculatorTest.cs" />
     <Compile Include="OneArgumentCalvulator\arcsinxCalculatorTest.cs" />
