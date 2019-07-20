@@ -21,19 +21,34 @@ namespace calculator
 
         private void calculeted(object sender, EventArgs e)
         {
-            double firstValue = Convert.ToDouble(textBox1.Text);
-            double secondValue = Convert.ToDouble(textBox2.Text);
-            ICalculator calculator = CalculatorFactory.CreateCalculator(((Button)sender).Name);
-            var result = calculator.Calculate(firstValue, secondValue);
-            textBox3.Text = result.ToString();
+            try
+            {
+                double firstValue = Convert.ToDouble(textBox1.Text);
+                double secondValue = Convert.ToDouble(textBox2.Text);
+                ICalculator calculator = CalculatorFactory.CreateCalculator(((Button) sender).Name);
+                var result = calculator.Calculate(firstValue, secondValue);
+                textBox3.Text = result.ToString();
+            }
+            catch (Exception exp)
+            {
+                textBox3.Text = exp.Message;
+            }
         }
 
         private void sincos(object sender, EventArgs e)
         {
-            double firstValue = Convert.ToDouble(textBox1.Text);
-            IOneArgumentCalculator calculator = OneArgumentCalculatorFactory.CreateCalculator(((Button)sender).Name);
-            var result = calculator.Calculate(firstValue);
-            textBox3.Text = result.ToString();
+            try
+            {
+                double firstValue = Convert.ToDouble(textBox1.Text);
+                IOneArgumentCalculator calculator =
+                    OneArgumentCalculatorFactory.CreateCalculator(((Button) sender).Name);
+                var result = calculator.Calculate(firstValue);
+                textBox3.Text = result.ToString();
+            }
+            catch (Exception exp)
+            {
+                textBox3.Text = exp.Message;
+            }
         }
 
     }
