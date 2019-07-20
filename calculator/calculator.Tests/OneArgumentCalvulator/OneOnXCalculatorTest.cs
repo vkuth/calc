@@ -1,4 +1,6 @@
-﻿using calculator.OneArgumentCalvulator;
+﻿using System;
+using calculator.OneArgumentCalvulator;
+using calculator.TwoArgumentCalculator;
 using NUnit.Framework;
 
 namespace calculator.Tests.OneArgumentCalvulator
@@ -14,6 +16,14 @@ namespace calculator.Tests.OneArgumentCalvulator
             var calculator = new oneonxCalculator();
             var result = calculator.Calculate(firstValue);
             Assert.AreEqual(expected, result, 0.0001);
+        }
+
+        [Test]
+        public void DevizionByZeroTest()
+        {
+            IOneArgumentCalculator calculator = new oneonxCalculator();
+            Assert.Throws<Exception>(() => calculator.Calculate(0));
+
         }
     }
 }
