@@ -1,4 +1,5 @@
-﻿using calculator.OneArgumentCalvulator;
+﻿using System;
+using calculator.OneArgumentCalvulator;
 using NUnit.Framework;
 
 namespace calculator.Tests.OneArgumentCalvulator
@@ -14,6 +15,14 @@ namespace calculator.Tests.OneArgumentCalvulator
             var calculator = new arcsinxCalculator();
             var result = calculator.Calculate(firstValue);
             Assert.AreEqual(expected, result, 0.0001);
+        }
+
+        [Test]
+        public void ExceptionByRangeTest()
+        {
+            var calculator = new arcsinxCalculator();
+            Assert.Throws<Exception>(() => calculator.Calculate(-2));
+
         }
     }
 }
