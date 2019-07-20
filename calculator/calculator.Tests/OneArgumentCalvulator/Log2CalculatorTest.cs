@@ -23,5 +23,6 @@ namespace calculator.Tests.OneArgumentCalvulator
            Assert.Throws<Exception>(() => calculator.Calculate(-1));
 
         }
+
     }
 }
