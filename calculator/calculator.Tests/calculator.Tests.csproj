@@ -48,6 +48,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CalculatorFactoryTest\CalculatorFactoryTest.cs" />
     <Compile Include="Class1.cs" />
     <Compile Include="OneArgumentCalvulator\acrccosxCalculatorTest.cs" />
     <Compile Include="OneArgumentCalvulator\AntiCalculatorTest.cs" />
