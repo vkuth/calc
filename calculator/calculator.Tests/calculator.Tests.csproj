@@ -64,6 +64,7 @@
     <Compile Include="OneArgumentCalvulator\SINCalculatorTest.cs" />
     <Compile Include="OneArgumentCalvulator\TANCalculatorTest.cs" />
     <Compile Include="OneArgumentCalvulator\TenDegreeXCalculatorTest.cs" />
+    <Compile Include="OneArgumentCalvulator\TwoDegreeXCalculatorTest.cs" />
     <Compile Include="TwoArgumentCalculator\DevizionCalculatorTest.cs" />
     <Compile Include="TwoArgumentCalculator\maxCalculatorTest.cs" />
     <Compile Include="TwoArgumentCalculator\MinusCalculatorTest.cs" />
