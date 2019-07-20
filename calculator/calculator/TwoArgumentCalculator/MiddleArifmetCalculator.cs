@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace calculator.TwoArgumentCalculator
 {
-    class MiddleArifmetCalculator : ICalculator
+    public class MiddleArifmetCalculator : ICalculator
     {
         public double Calculate(double firstvalue, double secondvalue)
         {

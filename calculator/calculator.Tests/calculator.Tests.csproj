@@ -69,6 +69,7 @@
     <Compile Include="TwoArgumentCalculator\FractionalDegreeCalculatorTest.cs" />
     <Compile Include="TwoArgumentCalculator\LogxyCalculatorTest.cs" />
     <Compile Include="TwoArgumentCalculator\maxCalculatorTest.cs" />
+    <Compile Include="TwoArgumentCalculator\MiddleArifmetCalculatorTest.cs" />
     <Compile Include="TwoArgumentCalculator\MinusCalculatorTest.cs" />
     <Compile Include="TwoArgumentCalculator\ModCalculatorTest.cs" />
     <Compile Include="TwoArgumentCalculator\MultipliCalculatorTest.cs" />
