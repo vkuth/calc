@@ -57,6 +57,7 @@
     <Compile Include="OneArgumentCalvulator\expCalculatorTest.cs" />
     <Compile Include="OneArgumentCalvulator\lnCalculatorTest.cs" />
     <Compile Include="OneArgumentCalvulator\log10CalculatorTest.cs" />
+    <Compile Include="OneArgumentCalvulator\Log2CalculatorTest.cs" />
     <Compile Include="OneArgumentCalvulator\OneOnXCalculatorTest.cs" />
     <Compile Include="OneArgumentCalvulator\SINCalculatorTest.cs" />
     <Compile Include="TwoArgumentCalculator\DevizionCalculatorTest.cs" />
