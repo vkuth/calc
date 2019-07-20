@@ -4,7 +4,7 @@ using NUnit.Framework;
 namespace calculator.Tests.TwoArgumentCalculator
 {
     [TestFixture]
-    public class xonyCalculatorTest
+    public class XonyCalculatorTest
     {
         [TestCase(0, 0, 1)]
         [TestCase(3, 4, 81)]

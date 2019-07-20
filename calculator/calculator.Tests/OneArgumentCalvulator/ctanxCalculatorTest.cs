@@ -4,7 +4,7 @@ using NUnit.Framework;
 namespace calculator.Tests.OneArgumentCalvulator
 {
     [TestFixture]
-    public class ctanxCalculatorTest
+    public class CtanxCalculatorTest
     {
         [TestCase(1, 0.6420)]
         [TestCase(3, -7.0152)]

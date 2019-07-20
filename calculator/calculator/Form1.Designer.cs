@@ -178,6 +178,7 @@
             this.log2.TabIndex = 12;
             this.log2.Text = "log2";
             this.log2.UseVisualStyleBackColor = true;
+            this.log2.Click += new System.EventHandler(this.sincos);
             // 
             // mod
             // 

@@ -4,7 +4,7 @@ using NUnit.Framework;
 namespace calculator.Tests.TwoArgumentCalculator
 {
     [TestFixture]
-    public class maxCalculatorTest
+    public class MaxCalculatorTest
     {
         [TestCase(0, 1, 1)]
         [TestCase(3, 4, 4)]
