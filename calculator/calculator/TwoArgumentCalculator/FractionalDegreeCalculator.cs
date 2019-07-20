@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace calculator.TwoArgumentCalculator
 {
-    class FractionalDegreeCalculator : ICalculator
+    public class FractionalDegreeCalculator : ICalculator
     {
         public double Calculate(double firstValue, double secondValue)
         {
