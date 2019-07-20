@@ -3,7 +3,11 @@
 namespace calculator.TwoArgumentCalculator
 {
     public static class CalculatorFactory
-    {
+    {/// <summary>
+     /// Этот метод выполняет соответсвуюшее действие в зависимости от нажатой кнопки.
+     /// </summary>
+     /// <param name="operation">Принимает условие</param>
+     /// <returns>Выполнение действия</returns>
         public static ICalculator CreateCalculator(string operation)
         {
             switch (operation)

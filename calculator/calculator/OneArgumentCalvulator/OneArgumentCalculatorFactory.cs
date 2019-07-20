@@ -3,7 +3,11 @@
 namespace calculator.OneArgumentCalvulator
 {
     public static class OneArgumentCalculatorFactory
-    {
+    {/// <summary>
+     /// Этот метод выполняет соответсвуюшее действие в зависимости от нажатой кнопки.
+     /// </summary>
+     /// <param name="operation">Принимает условие</param>
+     /// <returns>Выполнение действия</returns>
         public static IOneArgumentCalculator CreateCalculator(string operation)
         {
             switch (operation)

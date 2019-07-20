@@ -7,7 +7,11 @@ using System.Threading.Tasks;
 namespace calculator.OneArgumentCalvulator
 {
     public class oneonxCalculator : IOneArgumentCalculator
-    {
+    {/// <summary>
+    /// Деление единицы на заданое число
+    /// </summary>
+    /// <param name="firstValue">Заданое число</param>
+    /// <returns>Результат деления</returns>
         public double Calculate(double firstValue)
         {
             if (firstValue == 0)

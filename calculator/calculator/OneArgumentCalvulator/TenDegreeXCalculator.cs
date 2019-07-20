@@ -7,7 +7,11 @@ using System.Threading.Tasks;
 namespace calculator.OneArgumentCalvulator
 {
     public class TenDegreeXCalculator : IOneArgumentCalculator
-    {
+    {/// <summary>
+     /// Возведение 10 в степень заданого числа
+     /// </summary>
+     /// <param name="firstValue">Заданное число</param>
+     /// <returns>Результат возведения</returns>
         public double Calculate(double firstValue)
         {
             return Math.Pow(10, firstValue);

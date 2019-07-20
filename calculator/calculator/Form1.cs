@@ -13,12 +13,18 @@ using calculator.TwoArgumentCalculator;
 namespace calculator
 {
     public partial class Form1 : Form
-    {
+    {/// <summary>
+    /// Метод для поддержки конструктора
+    /// </summary>
         public Form1()
         {
             InitializeComponent();
         }
-
+        /// <summary>
+        /// Принятие значений и вывод результата
+        /// </summary>
+        /// <param name="sender">Отправка условия нажатой кнопки</param>
+        /// <param name="e">Предоставляет значение для событий, не содержащих данных</param>
         private void calculeted(object sender, EventArgs e)
         {
             try
@@ -34,7 +40,11 @@ namespace calculator
                 textBox3.Text = exp.Message;
             }
         }
-
+        /// <summary>
+        /// Принятие значения и вывод результата
+        /// </summary>
+        /// <param name="sender">Отправка условия нажатой кнопки</param>
+        /// <param name="e">Предоставляет значение для событий, не содержащих данных</param>
         private void sincos(object sender, EventArgs e)
         {
             try
