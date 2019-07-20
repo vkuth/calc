@@ -1,4 +1,5 @@
-﻿using calculator.OneArgumentCalvulator;
+﻿using System;
+using calculator.OneArgumentCalvulator;
 using NUnit.Framework;
 
 namespace calculator.Tests.OneArgumentCalvulator
@@ -16,5 +17,12 @@ namespace calculator.Tests.OneArgumentCalvulator
             Assert.AreEqual(expected, result, 0.0001);
         }
 
+        [Test]
+        public void ExceptionByNegativValueTest()
+        {
+            var calculator = new lncalculator();
+            Assert.Throws<Exception>(() => calculator.Calculate(-1));
+
+        }
     }
 }
