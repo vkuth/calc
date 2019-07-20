@@ -67,6 +67,7 @@
     <Compile Include="OneArgumentCalvulator\TwoDegreeXCalculatorTest.cs" />
     <Compile Include="TwoArgumentCalculator\DevizionCalculatorTest.cs" />
     <Compile Include="TwoArgumentCalculator\FractionalDegreeCalculatorTest.cs" />
+    <Compile Include="TwoArgumentCalculator\LogxyCalculatorTest.cs" />
     <Compile Include="TwoArgumentCalculator\maxCalculatorTest.cs" />
     <Compile Include="TwoArgumentCalculator\MinusCalculatorTest.cs" />
     <Compile Include="TwoArgumentCalculator\ModCalculatorTest.cs" />
