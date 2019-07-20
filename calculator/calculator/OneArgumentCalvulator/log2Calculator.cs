@@ -10,6 +10,10 @@ namespace calculator.OneArgumentCalvulator
     {
         public double Calculate(double firstValue)
         {
+            if (firstValue < 0)
+            {
+                throw new Exception("Логарифм отрицательного числа");
+            }
             return Math.Log(firstValue,2);
         }
 
