@@ -2,14 +2,15 @@
 
 namespace calculator.TwoArgumentCalculator
 {
-   
-    public class divizioncalculator : ICalculator
-    {/// <summary>
-    /// Выполнение действия деления двух чисел
-    /// </summary>
-    /// <param name="firstvalue">Первое число</param>
-    /// <param name="secondvalue">Второе число</param>
-    /// <returns>Результат деления</returns>
+
+    public class DivizionCalculator : ICalculator
+    {
+        /// <summary>
+        /// Perform the action of dividing two numbers
+        /// </summary>
+        /// <param name="firstvalue">First number</param>
+        /// <param name="secondvalue">Second number</param>
+        /// <returns>Division result</returns>
         public double Calculate(double firstvalue, double secondvalue)
         {
             if (secondvalue == 0)

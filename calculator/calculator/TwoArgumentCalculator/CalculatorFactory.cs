@@ -3,11 +3,12 @@
 namespace calculator.TwoArgumentCalculator
 {
     public static class CalculatorFactory
-    {/// <summary>
-     /// Этот метод выполняет соответсвуюшее действие в зависимости от нажатой кнопки.
-     /// </summary>
-     /// <param name="operation">Принимает условие</param>
-     /// <returns>Выполнение действия</returns>
+    {
+        /// <summary>
+        /// This method performs the appropriate action depending on the transferred name
+        /// </summary>
+        /// <param name="operation"></param>
+        /// <returns></returns>
         public static ICalculator CreateCalculator(string operation)
         {
             switch (operation)
@@ -17,21 +18,21 @@ namespace calculator.TwoArgumentCalculator
                 case "minus":
                     return new MinusCalculator();
                 case "multipli":
-                    return new multiplicalculator();
+                    return new MultipliCalculator();
                 case "divizion":
-                    return new divizioncalculator();
+                    return new DivizionCalculator();
                 case "mod":
                     return new ModCalculator();
                 case "logxy":
-                    return new logxyCalculator();
+                    return new LogxyCalculator();
                 case "frdegree":
                     return new FractionalDegreeCalculator();
                 case "arif":
                     return new MiddleArifmetCalculator();
                 case "xony":
-                    return new xonyCalculator();
+                    return new XOnYCalculator();
                 case "max":
-                    return new maxCalculator();
+                    return new MaxCalculator();
                 default: throw new Exception("Huston we have a problem");
             }
         }

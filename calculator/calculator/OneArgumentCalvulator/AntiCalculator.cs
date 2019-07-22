@@ -1,20 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace calculator.OneArgumentCalvulator
+﻿namespace calculator.OneArgumentCalvulator
 {
     public class AntiCalculator : IOneArgumentCalculator
-    {/// <summary>
-     /// Изменение знака заданого числа
-     /// </summary>
-     /// <param name="firstValue">Заданное число</param>
-     /// <returns>Заданное число с обратным знаком</returns>
+    {
+        /// <summary>
+        /// Change the sign of a given number
+        /// </summary>
+        /// <param name="firstValue">Preset number</param>
+        /// <returns>Given number with opposite sign</returns>
         public double Calculate(double firstValue)
         {
-           return firstValue - (2 * firstValue);
+            return firstValue - (2 * firstValue);
         }
 
     }

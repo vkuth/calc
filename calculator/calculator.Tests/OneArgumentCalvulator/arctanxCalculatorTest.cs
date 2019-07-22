@@ -11,7 +11,7 @@ namespace calculator.Tests.OneArgumentCalvulator
         [TestCase(-7, -1.4288)]
         public void CalculateTest(double firstValue, double expected)
         {
-            var calculator = new arctanxCalculator();
+            var calculator = new ArctanxCalculator();
             var result = calculator.Calculate(firstValue);
             Assert.AreEqual(expected, result, 0.0001);
         }

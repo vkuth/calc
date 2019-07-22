@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using calculator.TwoArgumentCalculator;
+﻿using calculator.TwoArgumentCalculator;
 using NUnit.Framework;
 
 namespace calculator.Tests.TwoArgumentCalculator
@@ -14,7 +9,7 @@ namespace calculator.Tests.TwoArgumentCalculator
         [Test]
         public void CalculationTest()
         {
-            ICalculator calculator = new multiplicalculator();
+            ICalculator calculator = new MultipliCalculator();
             double result = calculator.Calculate(2, 1);
             Assert.AreEqual(2, result);
         }

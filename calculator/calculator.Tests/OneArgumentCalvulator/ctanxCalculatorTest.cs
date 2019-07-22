@@ -11,7 +11,7 @@ namespace calculator.Tests.OneArgumentCalvulator
         [TestCase(-7, -1.1475)]
         public void CalculateTest(double firstValue, double expected)
         {
-            var calculator = new ctanxCalculator();
+            var calculator = new CtanxCalculator();
             var result = calculator.Calculate(firstValue);
             Assert.AreEqual(expected, result, 0.0001);
         }

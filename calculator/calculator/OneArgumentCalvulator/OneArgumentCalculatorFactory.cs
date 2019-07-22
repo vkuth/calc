@@ -3,11 +3,12 @@
 namespace calculator.OneArgumentCalvulator
 {
     public static class OneArgumentCalculatorFactory
-    {/// <summary>
-     /// Этот метод выполняет соответсвуюшее действие в зависимости от нажатой кнопки.
-     /// </summary>
-     /// <param name="operation">Принимает условие</param>
-     /// <returns>Выполнение действия</returns>
+    {
+        /// <summary>
+        /// This method performs the appropriate action depending on the transferred name
+        /// </summary>
+        /// <param name="operation"></param>
+        /// <returns></returns>
         public static IOneArgumentCalculator CreateCalculator(string operation)
         {
             switch (operation)
@@ -17,7 +18,7 @@ namespace calculator.OneArgumentCalvulator
                 case "cos":
                     return new COSCalculator();
                 case "log2":
-                    return new log2Calculator();
+                    return new Log2Calculator();
                 case "tan":
                     return new TANCalculator();
                 case "modul":
@@ -29,21 +30,21 @@ namespace calculator.OneArgumentCalvulator
                 case "tenx":
                     return new TenDegreeXCalculator();
                 case "exp":
-                    return new expcalculator();
+                    return new ExpcalCalculator();
                 case "ln":
-                    return new lncalculator();
+                    return new LnCalculator();
                 case "log10":
-                    return new log10calculator();
+                    return new Log10Calculator();
                 case "oneonx":
-                    return new oneonxCalculator();
+                    return new OneOnXCalculator();
                 case "arctanx":
-                    return new arctanxCalculator();
+                    return new ArctanxCalculator();
                 case "arccosx":
-                    return new arccosxCalculator();
+                    return new ArccosxCalculator();
                 case "arcsinx":
-                    return new arcsinxCalculator();
+                    return new ArcsinxCalculator();
                 case "ctanx":
-                    return new ctanxCalculator();
+                    return new CtanxCalculator();
                 default: throw new Exception("Huston we have a problem");
             }
         }

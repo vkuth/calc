@@ -70,7 +70,7 @@
             this.plus.TabIndex = 0;
             this.plus.Text = "+";
             this.plus.UseVisualStyleBackColor = true;
-            this.plus.Click += new System.EventHandler(this.calculeted);
+            this.plus.Click += new System.EventHandler(this.Calculete);
             // 
             // minus
             // 
@@ -80,7 +80,7 @@
             this.minus.TabIndex = 1;
             this.minus.Text = "-";
             this.minus.UseVisualStyleBackColor = true;
-            this.minus.Click += new System.EventHandler(this.calculeted);
+            this.minus.Click += new System.EventHandler(this.Calculete);
             // 
             // multipli
             // 
@@ -90,7 +90,7 @@
             this.multipli.TabIndex = 2;
             this.multipli.Text = "*";
             this.multipli.UseVisualStyleBackColor = true;
-            this.multipli.Click += new System.EventHandler(this.calculeted);
+            this.multipli.Click += new System.EventHandler(this.Calculete);
             // 
             // divizion
             // 
@@ -100,7 +100,7 @@
             this.divizion.TabIndex = 3;
             this.divizion.Text = "/";
             this.divizion.UseVisualStyleBackColor = true;
-            this.divizion.Click += new System.EventHandler(this.calculeted);
+            this.divizion.Click += new System.EventHandler(this.Calculete);
             // 
             // textBox1
             // 
@@ -158,7 +158,7 @@
             this.sin.TabIndex = 10;
             this.sin.Text = "sin";
             this.sin.UseVisualStyleBackColor = true;
-            this.sin.Click += new System.EventHandler(this.sincos);
+            this.sin.Click += new System.EventHandler(this.Sincos);
             // 
             // cos
             // 
@@ -168,7 +168,7 @@
             this.cos.TabIndex = 11;
             this.cos.Text = "cos";
             this.cos.UseVisualStyleBackColor = true;
-            this.cos.Click += new System.EventHandler(this.sincos);
+            this.cos.Click += new System.EventHandler(this.Sincos);
             // 
             // log2
             // 
@@ -178,7 +178,7 @@
             this.log2.TabIndex = 12;
             this.log2.Text = "log2";
             this.log2.UseVisualStyleBackColor = true;
-            this.log2.Click += new System.EventHandler(this.sincos);
+            this.log2.Click += new System.EventHandler(this.Sincos);
             // 
             // mod
             // 
@@ -188,7 +188,7 @@
             this.mod.TabIndex = 13;
             this.mod.Text = "residue";
             this.mod.UseVisualStyleBackColor = true;
-            this.mod.Click += new System.EventHandler(this.calculeted);
+            this.mod.Click += new System.EventHandler(this.Calculete);
             // 
             // tan
             // 
@@ -198,7 +198,7 @@
             this.tan.TabIndex = 14;
             this.tan.Text = "tan";
             this.tan.UseVisualStyleBackColor = true;
-            this.tan.Click += new System.EventHandler(this.sincos);
+            this.tan.Click += new System.EventHandler(this.Sincos);
             // 
             // logxy
             // 
@@ -208,7 +208,7 @@
             this.logxy.TabIndex = 15;
             this.logxy.Text = "logx(y)";
             this.logxy.UseVisualStyleBackColor = true;
-            this.logxy.Click += new System.EventHandler(this.calculeted);
+            this.logxy.Click += new System.EventHandler(this.Calculete);
             // 
             // frdegree
             // 
@@ -218,7 +218,7 @@
             this.frdegree.TabIndex = 16;
             this.frdegree.Text = "x^(1/y)";
             this.frdegree.UseVisualStyleBackColor = true;
-            this.frdegree.Click += new System.EventHandler(this.calculeted);
+            this.frdegree.Click += new System.EventHandler(this.Calculete);
             // 
             // modul
             // 
@@ -228,7 +228,7 @@
             this.modul.TabIndex = 17;
             this.modul.Text = "|x|";
             this.modul.UseVisualStyleBackColor = true;
-            this.modul.Click += new System.EventHandler(this.sincos);
+            this.modul.Click += new System.EventHandler(this.Sincos);
             // 
             // anti
             // 
@@ -238,7 +238,7 @@
             this.anti.TabIndex = 18;
             this.anti.Text = "-x";
             this.anti.UseVisualStyleBackColor = true;
-            this.anti.Click += new System.EventHandler(this.sincos);
+            this.anti.Click += new System.EventHandler(this.Sincos);
             // 
             // twox
             // 
@@ -248,7 +248,7 @@
             this.twox.TabIndex = 19;
             this.twox.Text = "2^x";
             this.twox.UseVisualStyleBackColor = true;
-            this.twox.Click += new System.EventHandler(this.sincos);
+            this.twox.Click += new System.EventHandler(this.Sincos);
             // 
             // tenx
             // 
@@ -258,7 +258,7 @@
             this.tenx.TabIndex = 20;
             this.tenx.Text = "10^x";
             this.tenx.UseVisualStyleBackColor = true;
-            this.tenx.Click += new System.EventHandler(this.sincos);
+            this.tenx.Click += new System.EventHandler(this.Sincos);
             // 
             // arif
             // 
@@ -268,7 +268,7 @@
             this.arif.TabIndex = 21;
             this.arif.Text = "x+y/2";
             this.arif.UseVisualStyleBackColor = true;
-            this.arif.Click += new System.EventHandler(this.calculeted);
+            this.arif.Click += new System.EventHandler(this.Calculete);
             // 
             // exp
             // 
@@ -278,7 +278,7 @@
             this.exp.TabIndex = 22;
             this.exp.Text = "e^x";
             this.exp.UseVisualStyleBackColor = true;
-            this.exp.Click += new System.EventHandler(this.sincos);
+            this.exp.Click += new System.EventHandler(this.Sincos);
             // 
             // ln
             // 
@@ -288,7 +288,7 @@
             this.ln.TabIndex = 23;
             this.ln.Text = "ln(x)";
             this.ln.UseVisualStyleBackColor = true;
-            this.ln.Click += new System.EventHandler(this.sincos);
+            this.ln.Click += new System.EventHandler(this.Sincos);
             // 
             // log10
             // 
@@ -298,7 +298,7 @@
             this.log10.TabIndex = 24;
             this.log10.Text = "log10(x)";
             this.log10.UseVisualStyleBackColor = true;
-            this.log10.Click += new System.EventHandler(this.sincos);
+            this.log10.Click += new System.EventHandler(this.Sincos);
             // 
             // oneonx
             // 
@@ -308,7 +308,7 @@
             this.oneonx.TabIndex = 25;
             this.oneonx.Text = "1/x";
             this.oneonx.UseVisualStyleBackColor = true;
-            this.oneonx.Click += new System.EventHandler(this.sincos);
+            this.oneonx.Click += new System.EventHandler(this.Sincos);
             // 
             // arctanx
             // 
@@ -318,7 +318,7 @@
             this.arctanx.TabIndex = 26;
             this.arctanx.Text = "arctan(x)";
             this.arctanx.UseVisualStyleBackColor = true;
-            this.arctanx.Click += new System.EventHandler(this.sincos);
+            this.arctanx.Click += new System.EventHandler(this.Sincos);
             // 
             // arccosx
             // 
@@ -328,7 +328,7 @@
             this.arccosx.TabIndex = 27;
             this.arccosx.Text = "arccos(x)";
             this.arccosx.UseVisualStyleBackColor = true;
-            this.arccosx.Click += new System.EventHandler(this.sincos);
+            this.arccosx.Click += new System.EventHandler(this.Sincos);
             // 
             // arcsinx
             // 
@@ -338,7 +338,7 @@
             this.arcsinx.TabIndex = 28;
             this.arcsinx.Text = "arcsin(x)";
             this.arcsinx.UseVisualStyleBackColor = true;
-            this.arcsinx.Click += new System.EventHandler(this.sincos);
+            this.arcsinx.Click += new System.EventHandler(this.Sincos);
             // 
             // ctanx
             // 
@@ -348,7 +348,7 @@
             this.ctanx.TabIndex = 29;
             this.ctanx.Text = "ctan(x)";
             this.ctanx.UseVisualStyleBackColor = true;
-            this.ctanx.Click += new System.EventHandler(this.sincos);
+            this.ctanx.Click += new System.EventHandler(this.Sincos);
             // 
             // xony
             // 
@@ -358,7 +358,7 @@
             this.xony.TabIndex = 30;
             this.xony.Text = "x^y";
             this.xony.UseVisualStyleBackColor = true;
-            this.xony.Click += new System.EventHandler(this.calculeted);
+            this.xony.Click += new System.EventHandler(this.Calculete);
             // 
             // max
             // 
@@ -368,7 +368,7 @@
             this.max.TabIndex = 31;
             this.max.Text = "max";
             this.max.UseVisualStyleBackColor = true;
-            this.max.Click += new System.EventHandler(this.calculeted);
+            this.max.Click += new System.EventHandler(this.Calculete);
             // 
             // Form1
             // 

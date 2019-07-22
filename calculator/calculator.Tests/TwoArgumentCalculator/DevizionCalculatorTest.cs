@@ -10,7 +10,7 @@ namespace calculator.Tests.TwoArgumentCalculator
         [Test]
         public void CalculationTest()
         {
-            ICalculator calculator = new divizioncalculator();
+            ICalculator calculator = new DivizionCalculator();
             double result = calculator.Calculate(6, 2);
             Assert.AreEqual(3, result);
         }
@@ -18,7 +18,7 @@ namespace calculator.Tests.TwoArgumentCalculator
         [Test]
         public void DevizionByZeroTest()
         {
-            ICalculator calculator = new divizioncalculator();
+            ICalculator calculator = new DivizionCalculator();
             Assert.Throws<Exception>(() => calculator.Calculate(6, 0));
 
         }

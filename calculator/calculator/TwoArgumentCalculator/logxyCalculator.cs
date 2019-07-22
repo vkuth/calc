@@ -1,19 +1,16 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace calculator.TwoArgumentCalculator
 {
-    public class logxyCalculator : ICalculator
-    {/// <summary>
-     /// Вычисление логарифма второго числа с основанием ввиде первого числа
-     /// </summary>
-     /// <param name="firstValue">Первое число</param>
-     /// <param name="secondValue">Второе число</param>
-     /// <returns>Результат вычисления</returns>
-        public double Calculate(double firstValue,double secondValue)
+    public class LogxyCalculator : ICalculator
+    {
+        /// <summary>
+        /// Calculation of the logarithm of the second number with the basis of the first number
+        /// </summary>
+        /// <param name="firstValue">First number</param>
+        /// <param name="secondValue">Second number</param>
+        /// <returns>The result of the calculation</returns>
+        public double Calculate(double firstValue, double secondValue)
         {
             if (secondValue < 0)
             {

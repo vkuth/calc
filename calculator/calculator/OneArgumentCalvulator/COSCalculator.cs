@@ -2,12 +2,12 @@
 
 namespace calculator.OneArgumentCalvulator
 {
-    public class COSCalculator:IOneArgumentCalculator
-    {/// <summary>
-     /// Вычисление косинуса заданого числа
-     /// </summary>
-     /// <param name="firstValue">Заданное число</param>
-     /// <returns>Результат косинуса</returns>
+    public class COSCalculator : IOneArgumentCalculator
+    { /// <summary>
+      /// Calculating the cosine of a given number
+      /// </summary>
+      /// <param name="firstValue">Preset number</param>
+      /// <returns>Cosine result</returns>
         public double Calculate(double firstValue)
         {
             return Math.Cos(firstValue);

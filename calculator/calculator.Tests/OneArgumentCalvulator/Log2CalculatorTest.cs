@@ -12,14 +12,14 @@ namespace calculator.Tests.OneArgumentCalvulator
         [TestCase(7, 2.8073)]
         public void CalculateTest(double firstValue, double expected)
         {
-            var calculator = new log2Calculator();
+            var calculator = new Log2Calculator();
             var result = calculator.Calculate(firstValue);
             Assert.AreEqual(expected, result, 0.0001);
         }
         [Test]
         public void ExceptionByNegativValueTest()
         {
-            var calculator = new log2Calculator();
+            var calculator = new Log2Calculator();
            Assert.Throws<Exception>(() => calculator.Calculate(-1));
 
         }

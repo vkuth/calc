@@ -12,7 +12,7 @@ namespace calculator.Tests.OneArgumentCalvulator
         [TestCase(7, 1.9459)]
         public void CalculateTest(double firstValue, double expected)
         {
-            var calculator = new lncalculator();
+            var calculator = new LnCalculator();
             var result = calculator.Calculate(firstValue);
             Assert.AreEqual(expected, result, 0.0001);
         }
@@ -20,7 +20,7 @@ namespace calculator.Tests.OneArgumentCalvulator
         [Test]
         public void ExceptionByNegativValueTest()
         {
-            var calculator = new lncalculator();
+            var calculator = new LnCalculator();
             Assert.Throws<Exception>(() => calculator.Calculate(-1));
 
         }

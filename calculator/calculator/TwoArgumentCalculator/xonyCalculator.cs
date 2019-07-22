@@ -1,21 +1,18 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace calculator.TwoArgumentCalculator
 {
-    public class xonyCalculator : ICalculator
-    {/// <summary>
-    /// Возведение первого числа в степень второго числа
-    /// </summary>
-    /// <param name="firstvalue">Первое число</param>
-    /// <param name="secondvalue">Второе число</param>
-    /// <returns>Результат возведения</returns>
+    public class XOnYCalculator : ICalculator
+    {
+        /// <summary>
+        /// Raising the first number to the power of the second
+        /// </summary>
+        /// <param name="firstvalue">First number</param>
+        /// <param name="secondvalue">Second number</param>
+        /// <returns>The result of the construction</returns>
         public double Calculate(double firstvalue, double secondvalue)
         {
-            return Math.Pow(firstvalue,secondvalue);
+            return Math.Pow(firstvalue, secondvalue);
         }
     }
 }

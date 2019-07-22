@@ -11,7 +11,7 @@ namespace calculator.Tests.TwoArgumentCalculator
         [TestCase(-7, -2, 0.0204)]
         public void CalculateTest(double firstValue,double secondValue,double expected)
         {
-            var calculator = new xonyCalculator();
+            var calculator = new XOnYCalculator();
             var result = calculator.Calculate(firstValue, secondValue);
             Assert.AreEqual(expected, result,0.0001);
         }

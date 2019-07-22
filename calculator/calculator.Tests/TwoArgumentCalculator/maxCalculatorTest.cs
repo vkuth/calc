@@ -11,7 +11,7 @@ namespace calculator.Tests.TwoArgumentCalculator
         [TestCase(-7, -2, -2)]
         public void CalculateTest(double firstValue, double secondValue, double expected)
         {
-            var calculator = new maxCalculator();
+            var calculator = new MaxCalculator();
             var result = calculator.Calculate(firstValue, secondValue);
             Assert.AreEqual(expected, result);
         }

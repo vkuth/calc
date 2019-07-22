@@ -12,7 +12,7 @@ namespace calculator.Tests.OneArgumentCalvulator
         [TestCase(0.5, 1.0471)]
         public void CalculateTest(double firstValue, double expected)
         {
-            var calculator = new arccosxCalculator();
+            var calculator = new ArccosxCalculator();
             var result = calculator.Calculate(firstValue);
             Assert.AreEqual(expected, result, 0.0001);
         }
@@ -20,7 +20,7 @@ namespace calculator.Tests.OneArgumentCalvulator
         [Test]
         public void ExceptionByRangeTest()
         {
-            var calculator = new arccosxCalculator();
+            var calculator = new ArccosxCalculator();
             Assert.Throws<Exception>(() => calculator.Calculate(-2));
 
         }

@@ -11,7 +11,7 @@ namespace calculator.Tests.OneArgumentCalvulator
         [TestCase(-7, 0.0009)]
         public void CalculateTest(double firstValue,double expected)
         {
-            var calculator = new expcalculator();
+            var calculator = new ExpcalCalculator();
             var result = calculator.Calculate(firstValue);
             Assert.AreEqual(expected, result,0.0001);
         }

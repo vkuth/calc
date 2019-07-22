@@ -1,5 +1,4 @@
 ﻿using calculator.OneArgumentCalvulator;
-using calculator.TwoArgumentCalculator;
 using NUnit.Framework;
 
 namespace calculator.Tests.OneArgumentCalvulator

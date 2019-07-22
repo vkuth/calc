@@ -1,17 +1,14 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace calculator.OneArgumentCalvulator
 {
     public class ModulCalculator : IOneArgumentCalculator
-    {/// <summary>
-     /// Вывод модуля заданного числа
-     /// </summary>
-     /// <param name="firstValue">Заданное число</param>
-     /// <returns>Модуль числа</returns>
+    {
+        /// <summary>
+        /// Module output of a given number
+        /// </summary>
+        /// <param name="firstValue">Preset number</param>
+        /// <returns>The absolute value of a number</returns>
         public double Calculate(double firstValue)
         {
             return Math.Abs(firstValue);

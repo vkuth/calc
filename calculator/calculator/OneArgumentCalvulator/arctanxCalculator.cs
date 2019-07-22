@@ -1,17 +1,14 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace calculator.OneArgumentCalvulator
 {
-    public class arctanxCalculator : IOneArgumentCalculator
-    {/// <summary>
-     /// Вычисление арктангенса заданого числа
-     /// </summary>
-     /// <param name="firstValue">Заданное число</param>
-     /// <returns>Результат арктангенса</returns>
+    public class ArctanxCalculator : IOneArgumentCalculator
+    {
+        /// <summary>
+        /// Calculate the arctangent of a given number
+        /// </summary>
+        /// <param name="firstValue">Preset number</param>
+        /// <returns>Arctangent result</returns>
         public double Calculate(double firstValue)
         {
             return Math.Atan(firstValue);

@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using calculator.OneArgumentCalvulator;
 using calculator.TwoArgumentCalculator;
@@ -13,25 +6,27 @@ using calculator.TwoArgumentCalculator;
 namespace calculator
 {
     public partial class Form1 : Form
-    {/// <summary>
-    /// Метод для поддержки конструктора
-    /// </summary>
+    {
+        /// <summary>
+        /// Method to support constructor
+        /// </summary>
         public Form1()
         {
             InitializeComponent();
         }
+
         /// <summary>
-        /// Принятие значений и вывод результата
+        /// Acceptance of values and output of the result
         /// </summary>
-        /// <param name="sender">Отправка условия нажатой кнопки</param>
-        /// <param name="e">Предоставляет значение для событий, не содержащих данных</param>
-        private void calculeted(object sender, EventArgs e)
+        /// <param name="sender">Sending the name of the pressed button</param>
+        /// <param name="e">Provides value for events that do not contain data</param>
+        private void Calculete(object sender, EventArgs e)
         {
             try
             {
                 double firstValue = Convert.ToDouble(textBox1.Text);
                 double secondValue = Convert.ToDouble(textBox2.Text);
-                ICalculator calculator = CalculatorFactory.CreateCalculator(((Button) sender).Name);
+                ICalculator calculator = CalculatorFactory.CreateCalculator(((Button)sender).Name);
                 var result = calculator.Calculate(firstValue, secondValue);
                 textBox3.Text = result.ToString();
             }
@@ -40,17 +35,18 @@ namespace calculator
                 textBox3.Text = exp.Message;
             }
         }
+
         /// <summary>
-        /// Принятие значения и вывод результата
+        /// Acceptance of value and output of the result
         /// </summary>
-        /// <param name="sender">Отправка условия нажатой кнопки</param>
-        /// <param name="e">Предоставляет значение для событий, не содержащих данных</param>
-        private void sincos(object sender, EventArgs e)
+        /// <param name="sender">Sending the name of the pressed button</param>
+        /// <param name="e">Provides value for events that do not contain data</param>
+        private void Sincos(object sender, EventArgs e)
         {
             try
             {
                 double firstValue = Convert.ToDouble(textBox1.Text);
-                IOneArgumentCalculator calculator =OneArgumentCalculatorFactory.CreateCalculator(((Button) sender).Name);
+                IOneArgumentCalculator calculator = OneArgumentCalculatorFactory.CreateCalculator(((Button)sender).Name);
                 var result = calculator.Calculate(firstValue);
                 textBox3.Text = result.ToString();
             }
